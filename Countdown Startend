@@ -1,0 +1,18 @@
+import time
+
+Imenit = int(input('Masukkan Menit : '))
+Idetik = int(input('Masukkan Detik : '))
+
+for detik in range(Idetik, -1, -1):
+    time.sleep(1)
+    print (str(Imenit) + ' : ' + str(detik))
+    while detik == 0:
+        if Imenit == 0:
+            print("Alarm bunyi!!")
+            break
+        Imenit -= 1
+        detik =+ 59
+
+        for detik in range(detik, -1, -1):
+            time.sleep(1)
+            print (str(Imenit) + ' : ' + str(detik))
